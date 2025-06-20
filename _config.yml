@@ -18,5 +18,4 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - "Chat Playground Lab Book.md"
-  - README.md 
+  - "Chat Playground Lab Book.md" 
