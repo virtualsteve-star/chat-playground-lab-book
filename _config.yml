@@ -8,10 +8,8 @@ url: "https://virtualsteve-star.github.io"
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
-
-# Include all markdown files
-include:
-  - "*.md"
+show_drafts: false
+future: false
 
 # Exclude from processing
 exclude:
