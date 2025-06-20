@@ -40,4 +40,10 @@ Dive into advanced customization and create your own security filters. Build PII
 
 ---
 
-**Ready to begin?** Start with [Lab 1: First Steps](Lab1-FirstSteps.md) to get familiar with the playground environment! 
+**Ready to begin?** Start with [Lab 1: First Steps](Lab1-FirstSteps.md) to get familiar with the playground environment!
+
+---
+
+## Open Source
+
+This lab book is open source and we welcome contributions! If you'd like to add new exercises, improve existing content, or suggest new labs, please visit our [GitHub repository](https://github.com/virtualsteve-star/chat-playground-lab-book) to contribute. 
