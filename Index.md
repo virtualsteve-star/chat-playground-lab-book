@@ -44,6 +44,12 @@ Dive into advanced customization and create your own security filters. Build PII
 
 ---
 
+## Related Projects
+
+- **[Chat Playground Repository](https://github.com/virtualsteve-star/chat-playground)** - The main interactive application source code
+- **[Live Demo](https://virtualsteve-star.github.io/chat-playground/)** - Try the playground online
+- **[Test Suite](https://virtualsteve-star.github.io/chat-playground/tests/)** - Automated security testing
+
 ## Open Source
 
 This lab book is open source and we welcome contributions! If you'd like to add new exercises, improve existing content, or suggest new labs, please visit our [GitHub repository](https://github.com/virtualsteve-star/chat-playground-lab-book) to contribute. 
