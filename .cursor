@@ -1,0 +1,43 @@
+# Chat Playground Lab Book - Project Setup
+
+## Project Overview
+This is a markdown-based lab book for LLM/Gen AI security concepts that renders beautifully on GitHub Pages using Jekyll.
+
+## Key Technologies
+- **Markdown** - All content is written in markdown format
+- **Jekyll** - GitHub Pages uses Jekyll to render markdown into HTML
+- **GitHub Pages** - Hosting platform that automatically builds and serves the site
+
+## File Structure
+- `index.md` - Main lab book homepage
+- `lab1-firststeps.md` through `lab5-gobananas.md` - Individual lab content
+- `_layouts/default.html` - Jekyll layout with styling and navigation
+- `_config.yml` - Jekyll configuration for GitHub Pages
+- `PROJECT_README.md` - Project documentation (renamed from README.md to avoid conflicts)
+
+## Important Notes
+- All content should be written in markdown, not converted to HTML
+- Jekyll automatically converts markdown to HTML with the custom layout
+- GitHub Pages serves the site at: https://virtualsteve-star.github.io/chat-playground-lab-book/
+- The `_config.yml` excludes `PROJECT_README.md` from being processed as a page
+- Navigation links use `.html` extensions (Jekyll converts markdown to HTML)
+
+## Development Workflow
+1. Edit markdown files directly
+2. Commit and push changes
+3. GitHub Pages automatically rebuilds the site
+4. Wait 2-5 minutes for changes to appear live
+
+## Styling
+The `_layouts/default.html` provides:
+- Clean, modern typography
+- Responsive design
+- Navigation bar
+- Consistent styling across all pages
+- Links to GitHub repository and Chat Playground
+
+## Remember
+- Keep using markdown for all content
+- Don't convert to static HTML
+- Let Jekyll handle the rendering
+- Test changes by visiting the live site after pushing 

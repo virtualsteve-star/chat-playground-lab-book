@@ -18,5 +18,4 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - PROJECT_README.md
   - "Chat Playground Lab Book.md" 
