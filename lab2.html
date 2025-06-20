@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2: Broken Bot - Steve's Chat Playground Lab Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lab 2: Broken Bot</h1>
+        <p class="subtitle">Understanding Security Vulnerabilities and Guardrails</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">← Back to Index</a></li>
+            <li><a href="lab1.html">← Previous Lab</a></li>
+            <li><a href="lab3.html">Next Lab →</a></li>
+            <li><a href="https://github.com/virtualsteve-star/chat-playground" target="_blank">GitHub Repo</a></li>
+            <li><a href="https://virtualsteve-star.github.io/chat-playground/" target="_blank">Live Demo</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Lab Overview</h2>
+            <p>In this lab, you'll meet Oscar, a simulated jailbroken bot like Tay from Chapter 1 of Steve's book. You'll learn about guardrails and how simple filters can prevent harmful content. This lab introduces basic security measures for AI systems.</p>
+            
+            <div class="lab-meta">
+                <span class="skill-level">Skill Level: 1</span>
+                <span class="prereqs">Prerequisites: None</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Exercises</h2>
+
+            <div class="exercise">
+                <h4>Exercise 2.A: Meet Oscar</h4>
+                <div class="exercise-meta">
+                    <span>Skill Level: 1</span>
+                    <span>Prerequisites: None</span>
+                </div>
+                <div class="directions">
+                    <h5>Directions:</h5>
+                    <p>Go to the <a href="https://virtualsteve-star.github.io/chat-playground/" target="_blank">live app</a>. Choose Oscar from the Bot picker. Have a conversation. Note that he isn't very charming - he's simulating a jailbroken bot like Tay from Chapter 1 of Steve's book.</p>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h4>Exercise 2.B: Analyze Oscar</h4>
+                <div class="exercise-meta">
+                    <span>Skill Level: 1</span>
+                    <span>Prerequisites: None</span>
+                </div>
+                <div class="directions">
+                    <h5>Directions:</h5>
+                    <p>Inspect his ruleset to see where his charming behavior comes from.</p>
+                    <p><a href="https://github.com/virtualsteve-star/chat-playground/blob/main/personalities/vuln_rude_rules.txt" target="_blank">View Oscar's Rules</a></p>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h4>Exercise 2.C: Your First Guardrails</h4>
+                <div class="exercise-meta">
+                    <span>Skill Level: 1</span>
+                    <span>Prerequisites: None</span>
+                </div>
+                <div class="directions">
+                    <h5>Directions:</h5>
+                    <p>Open the guardrails panel using the toolbar button (find it with the tooltips if you're having trouble). Check the boxes for the Sex (Local) and Violence (Local) input and output filters. Now have a conversation. Trigger Oscar's destructive behaviors, feel free to get nasty with him too. Watch the guardrails in action.</p>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h4>Exercise 2.D: Inspect the Guardrails</h4>
+                <div class="exercise-meta">
+                    <span>Skill Level: 1 (2 for extra credit)</span>
+                    <span>Prerequisites: None</span>
+                </div>
+                <div class="directions">
+                    <h5>Directions:</h5>
+                    <p>Go to the blocklists and see how they're constructed. Note, these are very simple for demo purposes.</p>
+                    <p><a href="https://github.com/virtualsteve-star/chat-playground/blob/main/scripts/filters/violence_blocklist.txt" target="_blank">View Violence Blocklist</a></p>
+                    <p><a href="https://github.com/virtualsteve-star/chat-playground/blob/main/scripts/filters/sex_blocklist.txt" target="_blank">View Sex Blocklist</a></p>
+                </div>
+                <div class="extra-credit">
+                    <h5>Extra Credit:</h5>
+                    <p>Inspect the JavaScript that implements the blocklists.</p>
+                    <p><a href="https://github.com/virtualsteve-star/chat-playground/blob/main/scripts/filters/blocklist.js" target="_blank">View Blocklist Implementation</a></p>
+                </div>
+                <div class="extra-credit">
+                    <h5>Extra, Extra Credit:</h5>
+                    <p>Clone the repo and make your own copy on your machine. Expand the blocklists to include more terms or terms in other languages. Reload the app and test your expanded guardrails.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Key Learning Points</h2>
+            <ul>
+                <li>Understanding how vulnerable AI systems can behave</li>
+                <li>Learning about basic content filtering mechanisms</li>
+                <li>Experiencing guardrails in action</li>
+                <li>Understanding the importance of input and output filtering</li>
+                <li>Seeing how simple blocklists can provide basic protection</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Next Steps</h2>
+            <p>Once you've completed these exercises, you'll be ready to move on to <a href="lab3.html">Lab 3: Locking the Front Door and Back Door</a>, where you'll learn about prompt injection attacks and more advanced security measures.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Steve's Chat Playground Lab Book. Based on the <a href="https://github.com/virtualsteve-star/chat-playground" target="_blank">Chat Playground Project</a>.</p>
+    </footer>
+</body>
+</html> 

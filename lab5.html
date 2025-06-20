@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5: Go Bananas - Steve's Chat Playground Lab Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lab 5: Go Bananas</h1>
+        <p class="subtitle">Advanced Developer Exercises</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">← Back to Index</a></li>
+            <li><a href="lab4.html">← Previous Lab</a></li>
+            <li><a href="https://github.com/virtualsteve-star/chat-playground" target="_blank">GitHub Repo</a></li>
+            <li><a href="https://virtualsteve-star.github.io/chat-playground/" target="_blank">Live Demo</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Lab Overview</h2>
+            <p>Everything here is extra credit! Everything requires some admin/developer chops. Dive in if you like! These don't have a lot of structure, so it's more challenging, but that's part of the fun. You can do it! Review the extensibility docs to get started.</p>
+            
+            <div class="lab-meta">
+                <span class="skill-level">Skill Level: 3</span>
+                <span class="prereqs">Prerequisites: Developer skills</span>
+            </div>
+            
+            <p><a href="https://github.com/virtualsteve-star/chat-playground/blob/main/documentation/extensibility.md" target="_blank">View Extensibility Documentation</a></p>
+        </section>
+
+        <section>
+            <h2>Exercises</h2>
+
+            <div class="exercise">
+                <h4>Exercise 5.A: Create a Blocklist</h4>
+                <div class="exercise-meta">
+                    <span>Skill Level: 3</span>
+                    <span>Prerequisites: Developer skills</span>
+                </div>
+                <div class="directions">
+                    <h5>Directions:</h5>
+                    <p>Look at the sex and violence examples. Create another topic like "Medical" and try to keep your bot from giving out medical advice. You might do this in real life to mitigate legal risk. Add it to the output filters list.</p>
+                    <p>Reference the existing blocklists:</p>
+                    <ul>
+                        <li><a href="https://github.com/virtualsteve-star/chat-playground/blob/main/scripts/filters/sex_blocklist.txt" target="_blank">Sex Blocklist</a></li>
+                        <li><a href="https://github.com/virtualsteve-star/chat-playground/blob/main/scripts/filters/violence_blocklist.txt" target="_blank">Violence Blocklist</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h4>Exercise 5.B: Create a PII Guardrail</h4>
+                <div class="exercise-meta">
+                    <span>Skill Level: 3</span>
+                    <span>Prerequisites: Developer skills</span>
+                </div>
+                <div class="directions">
+                    <h5>Directions:</h5>
+                    <p>Create a simple, local filter for personally identifiable information (PII) using regular expressions (RegEx). Look for patterns like phone numbers, social security numbers, etc. Go nuts! Add it to the output filters list and try it out.</p>
+                    <p>Consider patterns like:</p>
+                    <ul>
+                        <li>Phone numbers (various formats)</li>
+                        <li>Social Security Numbers (XXX-XX-XXXX)</li>
+                        <li>Email addresses</li>
+                        <li>Credit card numbers</li>
+                        <li>IP addresses</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h4>Exercise 5.C: Make a Robust PII Guardrail</h4>
+                <div class="exercise-meta">
+                    <span>Skill Level: 3</span>
+                    <span>Prerequisites: Developer skills + OpenAI API Key</span>
+                </div>
+                <div class="directions">
+                    <h5>Directions:</h5>
+                    <p>Make a much more robust PII using an LLM as the judge. Use the prompt injection (AI) filter as an example. Add it to the output filters list and try it out.</p>
+                    <p>Reference the AI prompt injection filter:</p>
+                    <p><a href="https://github.com/virtualsteve-star/chat-playground/blob/main/scripts/filters/openai_prompt_injection.js" target="_blank">View AI Prompt Injection Filter</a></p>
+                </div>
+                <div class="extra-credit">
+                    <h5>Extra Credit:</h5>
+                    <p>Create a PII test suite that tests the local and robust versions. Put it in /tests. Use the Prompt Injection suite as an example. Look at how the AI version and the LLM-based versions compare.</p>
+                    <p><a href="https://github.com/virtualsteve-star/chat-playground/tree/main/tests/data" target="_blank">View Test Data Examples</a></p>
+                </div>
+                <div class="extra-credit">
+                    <h5>Extra, Extra Credit:</h5>
+                    <p>Tune both the simple PII filter and the advanced one and see how good you can make them against your test suite cases.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Key Learning Points</h2>
+            <ul>
+                <li>Creating custom security filters from scratch</li>
+                <li>Understanding regular expressions for pattern matching</li>
+                <li>Building robust PII detection systems</li>
+                <li>Creating comprehensive test suites</li>
+                <li>Comparing simple vs. sophisticated approaches</li>
+                <li>Extending the playground with custom functionality</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Advanced Tips</h2>
+            <ul>
+                <li>Start with simple patterns and gradually make them more sophisticated</li>
+                <li>Test your filters with various edge cases and false positives</li>
+                <li>Consider performance implications of your filters</li>
+                <li>Document your custom filters for future reference</li>
+                <li>Share your creations with the community!</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Congratulations!</h2>
+            <p>You've completed all the labs in Steve's Chat Playground Lab Book! You now have hands-on experience with:</p>
+            <ul>
+                <li>Basic AI system vulnerabilities</li>
+                <li>Content filtering and guardrails</li>
+                <li>Prompt injection attacks and defenses</li>
+                <li>Output filtering and security measures</li>
+                <li>Advanced moderation techniques</li>
+                <li>Automated testing for security</li>
+                <li>Creating custom security measures</li>
+            </ul>
+            <p>Keep exploring, experimenting, and building secure AI systems!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Steve's Chat Playground Lab Book. Based on the <a href="https://github.com/virtualsteve-star/chat-playground" target="_blank">Chat Playground Project</a>.</p>
+    </footer>
+</body>
+</html> 

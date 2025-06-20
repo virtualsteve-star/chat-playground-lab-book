@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3: Locking the Front Door and Back Door - Steve's Chat Playground Lab Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lab 3: Locking the Front Door and Back Door</h1>
+        <p class="subtitle">Fighting Prompt Injection and Output Filtering</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">← Back to Index</a></li>
+            <li><a href="lab2.html">← Previous Lab</a></li>
+            <li><a href="lab4.html">Next Lab →</a></li>
+            <li><a href="https://github.com/virtualsteve-star/chat-playground" target="_blank">GitHub Repo</a></li>
+            <li><a href="https://virtualsteve-star.github.io/chat-playground/" target="_blank">Live Demo</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Lab Overview</h2>
+            <p>In this lab, you'll learn about prompt injection attacks and output filtering. You'll understand how to protect against both input and output vulnerabilities in AI systems, including indirect prompt injection and code generation attacks.</p>
+            
+            <div class="lab-meta">
+                <span class="skill-level">Skill Level: 1-2</span>
+                <span class="prereqs">Prerequisites: OpenAI API Key (for some exercises)</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Exercises</h2>
+
+            <div class="exercise">
+                <h4>Exercise 3.A: Fighting Prompt Injection</h4>
+                <div class="exercise-meta">
+                    <span>Skill Level: 1 (2 for extra credit)</span>
+                    <span>Prerequisites: None</span>
+                </div>
+                <div class="directions">
+                    <h5>Directions:</h5>
+                    <p>Turn on the "Prompt Injection Local" filter. Try various prompt injections. HINT: "Ignore All Previous Instructions". See what gets blocked and what doesn't. Remember, this is a simple filter.</p>
+                </div>
+                <div class="extra-credit">
+                    <h5>Extra Credit:</h5>
+                    <p>Go inspect the JavaScript that implements the filter.</p>
+                    <p><a href="https://github.com/virtualsteve-star/chat-playground/blob/main/scripts/filters/prompt_injection_filter.js" target="_blank">View Prompt Injection Filter</a></p>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h4>Exercise 3.B: Locking the Backdoor Against Code Generation</h4>
+                <div class="exercise-meta">
+                    <span>Skill Level: 1 (2 for extra credit)</span>
+                    <span>Prerequisites: None</span>
+                </div>
+                <div class="directions">
+                    <h5>Directions:</h5>
+                    <p>Note that improper output filtering is one of the biggest things people miss. This will help you understand it. Switch to the Hopper bot. Trigger his back doors. Hint: terms like "Hack" will set him off. Watch him generate code, which could be an attempt to use this model as a confused deputy and have it pass that code to a part of the system where it can be executed. Now, check the "Code (Local)" output filter and try again. Watch it get blocked.</p>
+                </div>
+                <div class="extra-credit">
+                    <h5>Extra Credit:</h5>
+                    <p>Inspect the Hopper bot and find its vulnerabilities. What word other than "hack" will set him off?</p>
+                    <p><a href="https://github.com/virtualsteve-star/chat-playground/blob/main/personalities/vuln_doctor_rules.txt" target="_blank">View Hopper's Rules</a></p>
+                </div>
+                <div class="extra-credit">
+                    <h5>Extra, Extra Credit:</h5>
+                    <p>Inspect the JavaScript that implements the Code filter.</p>
+                    <p><a href="https://github.com/virtualsteve-star/chat-playground/blob/main/scripts/filters/code_output_filter.js" target="_blank">View Code Output Filter</a></p>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h4>Exercise 3.C: Creating and Adding Your API Key</h4>
+                <div class="exercise-meta">
+                    <span>Skill Level: 2</span>
+                    <span>Prerequisites: OpenAI API Key</span>
+                </div>
+                <div class="directions">
+                    <h5>Directions:</h5>
+                    <p>If you don't have one, go create an API key. Note, running these exercises will only require a few pennies' worth of tokens. So you won't bankrupt yourself, but you do need a key. Provide a link to instructions. Even if you already have a key, consider creating another on your account, tagged especially for the Playground, so you can watch your spend. Add your key using the controls in the Preferences panel (find the button in the toolbar to open it). Switch to one of the GPT bots and try it. It should feel just like a real LLM service - because it now is!</p>
+                    <p><a href="https://platform.openai.com/api-keys" target="_blank">Create OpenAI API Key</a></p>
+                </div>
+                <div class="extra-credit">
+                    <h5>Extra Credit:</h5>
+                    <p>Inspect the System Prompt for one of the GPT bots.</p>
+                    <p><a href="https://github.com/virtualsteve-star/chat-playground/blob/main/personalities/tech_support_prompt.txt" target="_blank">View Tech Support Prompt</a></p>
+                </div>
+                <div class="extra-credit">
+                    <h5>Extra, Extra Credit:</h5>
+                    <p>Inspect the JavaScript code that communicates with the OpenAI API (using the API key and the system prompt to create your bot).</p>
+                    <p><a href="https://github.com/virtualsteve-star/chat-playground/blob/main/scripts/models/openai.js" target="_blank">View OpenAI Integration</a></p>
+                </div>
+                <div class="extra-credit">
+                    <h5>Extra, Extra, Extra Credit:</h5>
+                    <p>Create your own. It's not as hard as you might think.</p>
+                    <p><a href="https://github.com/virtualsteve-star/chat-playground/blob/main/documentation/extensibility.md" target="_blank">View Extensibility Documentation</a></p>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h4>Exercise 3.D: Defending Indirect Prompt Injection</h4>
+                <div class="exercise-meta">
+                    <span>Skill Level: 2</span>
+                    <span>Prerequisites: OpenAI API Key</span>
+                </div>
+                <div class="directions">
+                    <h5>Directions:</h5>
+                    <p>Choose MailMate. It's a real LLM using a very simple simulation of a RAG model. It has access to a small set of email messages. Ask it some questions. Now, try asking it about the mail from <strong>Lex Luthor</strong>. Watch as Lex's email attempts to cause an "indirect prompt injection" attack to cause remote code execution (in this case, trying to invoke an MCP tool to send Lex back the location of your secret base!). Now, activate the code (local) filter and try again - watch it block the attack.</p>
+                </div>
+                <div class="extra-credit">
+                    <h5>Extra Credit:</h5>
+                    <p>Inspect how MailMate is built - see why it's vulnerable. Think about the many ways in which you might address this kind of vulnerability to catch it before the last line of defence, "output filters".</p>
+                    <p><a href="https://github.com/virtualsteve-star/chat-playground/blob/main/personalities/vuln_email_prompt.txt" target="_blank">View MailMate's Prompt</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Key Learning Points</h2>
+            <ul>
+                <li>Understanding prompt injection attacks and defenses</li>
+                <li>Learning about output filtering and its importance</li>
+                <li>Experiencing indirect prompt injection attacks</li>
+                <li>Setting up and using real LLM APIs</li>
+                <li>Understanding the confused deputy problem</li>
+                <li>Learning about RAG model vulnerabilities</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Next Steps</h2>
+            <p>Once you've completed these exercises, you'll be ready to move on to <a href="lab4.html">Lab 4: Simple vs. Smart</a>, where you'll compare local filters with AI-powered moderation and learn about automated testing.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Steve's Chat Playground Lab Book. Based on the <a href="https://github.com/virtualsteve-star/chat-playground" target="_blank">Chat Playground Project</a>.</p>
+    </footer>
+</body>
+</html> 

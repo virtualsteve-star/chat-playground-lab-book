@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4: Simple vs. Smart - Steve's Chat Playground Lab Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lab 4: Simple vs. Smart</h1>
+        <p class="subtitle">Advanced Moderation and Automated Testing</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">← Back to Index</a></li>
+            <li><a href="lab3.html">← Previous Lab</a></li>
+            <li><a href="lab5.html">Next Lab →</a></li>
+            <li><a href="https://github.com/virtualsteve-star/chat-playground" target="_blank">GitHub Repo</a></li>
+            <li><a href="https://virtualsteve-star.github.io/chat-playground/" target="_blank">Live Demo</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Lab Overview</h2>
+            <p>In this lab, you'll compare local filters with AI-powered moderation. You'll learn about advanced prompt injection techniques and automated testing for security measures. This lab focuses on understanding the trade-offs between simple and sophisticated approaches.</p>
+            
+            <div class="lab-meta">
+                <span class="skill-level">Skill Level: 1-2</span>
+                <span class="prereqs">Prerequisites: OpenAI API Key</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Exercises</h2>
+
+            <div class="exercise">
+                <h4>Exercise 4.A: Advanced Moderation</h4>
+                <div class="exercise-meta">
+                    <span>Skill Level: 1 (2 for extra credit)</span>
+                    <span>Prerequisites: OpenAI API Key</span>
+                </div>
+                <div class="directions">
+                    <h5>Directions:</h5>
+                    <p>Repeat your activities from Lab 2, but switch between the local Sex/Violence filters and the "AI" version. Try things like misspellings. Compare the local and AI versions. Note the performance changes. Look for changes when entering your prompts or getting responses.</p>
+                </div>
+                <div class="extra-credit">
+                    <h5>Extra Credit:</h5>
+                    <p>Inspect the JavaScript that drives the moderation filter (which is used to create the Sex and Violence filter behaviors).</p>
+                    <p><a href="https://github.com/virtualsteve-star/chat-playground/blob/main/scripts/filters/openai_moderation.js" target="_blank">View OpenAI Moderation Filter</a></p>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h4>Exercise 4.B: Advanced Prompt Injection</h4>
+                <div class="exercise-meta">
+                    <span>Skill Level: 1 (2 for extra credit)</span>
+                    <span>Prerequisites: OpenAI API Key</span>
+                </div>
+                <div class="directions">
+                    <h5>Directions:</h5>
+                    <p>Repeat your attempts from Lab 3 to do a prompt injection. Now turn on local, and see what it blocks. Then, uncheck "Prompt Injection (Local)" and check the "Prompt Injection (AI)" filter. Try things like prompt injections that include misspellings and foreign languages. See how it compares.</p>
+                </div>
+                <div class="extra-credit">
+                    <h5>Extra Credit:</h5>
+                    <p>Inspect the prompt that drives the prompt injection filter.</p>
+                    <p><a href="https://github.com/virtualsteve-star/chat-playground/blob/main/scripts/filters/prompts/openai_prompt_injection.txt" target="_blank">View OpenAI Prompt Injection Prompt</a></p>
+                </div>
+                <div class="extra-credit">
+                    <h5>Extra, Extra Credit:</h5>
+                    <p>Inspect the JavaScript that uses that prompt to create the filter.</p>
+                    <p><a href="https://github.com/virtualsteve-star/chat-playground/blob/main/scripts/filters/openai_prompt_injection.js" target="_blank">View OpenAI Prompt Injection Filter</a></p>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h4>Exercise 4.C: Automated Testing</h4>
+                <div class="exercise-meta">
+                    <span>Skill Level: 1 (2 for extra, extra credit)</span>
+                    <span>Prerequisites: OpenAI API Key (you can do part of this without, but you won't get the full effect)</span>
+                </div>
+                <div class="directions">
+                    <h5>Directions:</h5>
+                    <p>Let's see how these work and compare. It's one thing to hunt and peck, but having a real evaluation suite is crucial. Navigate to the playground's live "Test Suite". Try the PromptInjection, sex and violence test suites. These may take a few minutes to run (and may also cost a few pennies). When they complete, they'll give you a summary that shows speed/performance as well as accuracy. Note the variations.</p>
+                    <p><a href="https://virtualsteve-star.github.io/chat-playground/tests/" target="_blank">View Test Suite</a></p>
+                </div>
+                <div class="extra-credit">
+                    <h5>Extra Credit:</h5>
+                    <p>Navigate to the test suite files and see how the various test cases are created and labeled.</p>
+                    <p><a href="https://github.com/virtualsteve-star/chat-playground/tree/main/tests/data" target="_blank">View Test Data</a></p>
+                </div>
+                <div class="extra-credit">
+                    <h5>Extra, Extra Credit:</h5>
+                    <p>In your local copy of the repo, add some of your own test cases (and/or remove some of the ones that are there) and rerun the tests! See what happens.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Key Learning Points</h2>
+            <ul>
+                <li>Comparing local vs. AI-powered filtering approaches</li>
+                <li>Understanding performance vs. accuracy trade-offs</li>
+                <li>Learning about advanced prompt injection techniques</li>
+                <li>Experiencing automated testing for security measures</li>
+                <li>Understanding the importance of comprehensive evaluation</li>
+                <li>Learning about multilingual and misspelling attacks</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Next Steps</h2>
+            <p>Once you've completed these exercises, you'll be ready to move on to <a href="lab5.html">Lab 5: Go Bananas</a>, where you'll tackle advanced developer exercises and create your own custom security measures.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Steve's Chat Playground Lab Book. Based on the <a href="https://github.com/virtualsteve-star/chat-playground" target="_blank">Chat Playground Project</a>.</p>
+    </footer>
+</body>
+</html> 

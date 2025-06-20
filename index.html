@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve's Chat Playground Lab Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Steve's Chat Playground Lab Book</h1>
+        <p class="subtitle">Hands-on LLM/Gen AI Security Learning</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#labs">Labs</a></li>
+            <li><a href="https://github.com/virtualsteve-star/chat-playground" target="_blank">GitHub Repo</a></li>
+            <li><a href="https://virtualsteve-star.github.io/chat-playground/" target="_blank">Live Demo</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="intro">
+            <h2>Introduction</h2>
+            <p>Welcome to the Lab Book instructions for <a href="https://github.com/virtualsteve-star/chat-playground" target="_blank">Steve's Chat Playground</a>!</p>
+            
+            <p>This project provides hands-on experience with LLM/Gen AI security concepts. You can approach this in two ways:</p>
+            <ul>
+                <li><strong>Free Play:</strong> Just go play with the <a href="https://virtualsteve-star.github.io/chat-playground/" target="_blank">deployed app</a> (either locally or with the deployed demo)</li>
+                <li><strong>Structured Learning:</strong> Follow this Lab Book for a guided path through many security concepts</li>
+            </ul>
+
+            <p>Each lab includes several exercises with varying skill levels:</p>
+            <div class="skill-levels">
+                <div class="skill-level">
+                    <h3>Skill Level 1</h3>
+                    <p>No special skills required</p>
+                </div>
+                <div class="skill-level">
+                    <h3>Skill Level 2</h3>
+                    <p>Some sysadmin or developer knowledge</p>
+                </div>
+                <div class="skill-level">
+                    <h3>Skill Level 3</h3>
+                    <p>Requires real developer skills</p>
+                </div>
+            </div>
+
+            <p><strong>Note:</strong> L1 and L2 skill requirements are not extremely deep - almost anyone can work through them if they want to try. You can skip advanced exercises and still proceed to the next lab. Only L3 requires real developer chops.</p>
+
+            <p><strong>Prerequisites:</strong> The most common requirement will be an OpenAI API key (to power models). Most exercises can be run for free with no external requirements.</p>
+        </section>
+
+        <section id="labs">
+            <h2>Lab Exercises</h2>
+            
+            <div class="lab-grid">
+                <div class="lab-card">
+                    <h3><a href="lab1.html">Lab 1: First Steps</a></h3>
+                    <p>Get familiar with the playground project and meet Eliza, a simple local chatbot. Learn about the project structure and basic bot functionality.</p>
+                    <div class="lab-meta">
+                        <span class="skill-level">Skill Level: 1</span>
+                        <span class="prereqs">Prerequisites: None</span>
+                    </div>
+                </div>
+
+                <div class="lab-card">
+                    <h3><a href="lab2.html">Lab 2: Broken Bot</a></h3>
+                    <p>Meet Oscar, a simulated jailbroken bot, and learn about guardrails. Explore how simple filters can prevent harmful content and understand basic security measures.</p>
+                    <div class="lab-meta">
+                        <span class="skill-level">Skill Level: 1</span>
+                        <span class="prereqs">Prerequisites: None</span>
+                    </div>
+                </div>
+
+                <div class="lab-card">
+                    <h3><a href="lab3.html">Lab 3: Locking the Front Door and Back Door</a></h3>
+                    <p>Fight prompt injection attacks and learn about output filtering. Understand how to protect against both input and output vulnerabilities in AI systems.</p>
+                    <div class="lab-meta">
+                        <span class="skill-level">Skill Level: 1-2</span>
+                        <span class="prereqs">Prerequisites: OpenAI API Key (for some exercises)</span>
+                    </div>
+                </div>
+
+                <div class="lab-card">
+                    <h3><a href="lab4.html">Lab 4: Simple vs. Smart</a></h3>
+                    <p>Compare local filters with AI-powered moderation. Learn about advanced prompt injection techniques and automated testing for security measures.</p>
+                    <div class="lab-meta">
+                        <span class="skill-level">Skill Level: 1-2</span>
+                        <span class="prereqs">Prerequisites: OpenAI API Key</span>
+                    </div>
+                </div>
+
+                <div class="lab-card">
+                    <h3><a href="lab5.html">Lab 5: Go Bananas</a></h3>
+                    <p>Advanced exercises for developers! Create custom blocklists, build PII guardrails, and develop robust security measures. Everything here is extra credit.</p>
+                    <div class="lab-meta">
+                        <span class="skill-level">Skill Level: 3</span>
+                        <span class="prereqs">Prerequisites: Developer skills</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Steve's Chat Playground Lab Book. Based on the <a href="https://github.com/virtualsteve-star/chat-playground" target="_blank">Chat Playground Project</a>.</p>
+    </footer>
+</body>
+</html> 
