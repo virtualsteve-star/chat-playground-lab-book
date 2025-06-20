@@ -9,6 +9,9 @@ markdown: kramdown
 highlighter: rouge
 permalink: pretty
 
+# Set index page
+index: index.md
+
 # Exclude from processing
 exclude:
   - Gemfile
@@ -18,4 +21,5 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - "Chat Playground Lab Book.md" 
+  - "Chat Playground Lab Book.md"
+  - README.md 
