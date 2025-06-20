@@ -28,24 +28,24 @@ The most common prerequisite is an OpenAI API key for exercises that use real LL
 
 ## Lab Overview
 
-### [Lab 1: First Steps - Meet Your Digital Companions](lab1-firststeps.html)
+### [Lab 1: First Steps - Meet Your Digital Companions](lab1-firststeps/)
 Get acquainted with the playground environment and meet Eliza, a simple local chatbot. Learn about the project structure and understand how basic chatbots work.
 
-### [Lab 2: Broken Bot - When Good Bots Go Bad](lab2-brokenbot.html)
+### [Lab 2: Broken Bot - When Good Bots Go Bad](lab2-brokenbot/)
 Explore what happens when chatbots lack proper guardrails. Meet Oscar, a deliberately problematic bot, and learn how to implement basic content filtering.
 
-### [Lab 3: Locking the Front Door and Back Door - Defense in Depth](lab3-defenseindepth.html)
+### [Lab 3: Locking the Front Door and Back Door - Defense in Depth](lab3-defenseindepth/)
 Master prompt injection attacks and learn to defend against them. Discover how to prevent code generation exploits and implement comprehensive security measures.
 
-### [Lab 4: Simple vs. Smart - AI-Powered Security](lab4-simplevssmart.html)
+### [Lab 4: Simple vs. Smart - AI-Powered Security](lab4-simplevssmart/)
 Compare local rule-based filters with AI-powered moderation systems. Learn about automated testing and evaluation of security measures.
 
-### [Lab 5: Go Bananas - Advanced Customization](lab5-gobananas.html)
+### [Lab 5: Go Bananas - Advanced Customization](lab5-gobananas/)
 Dive into advanced customization and create your own security filters. Build PII detection systems and expand the playground's capabilities. **Note: All exercises in this lab require Level 3 skills.**
 
 ---
 
-**Ready to begin?** Start with [Lab 1: First Steps](lab1-firststeps.html) to get familiar with the playground environment!
+**Ready to begin?** Start with [Lab 1: First Steps](lab1-firststeps/) to get familiar with the playground environment!
 
 ---
 
