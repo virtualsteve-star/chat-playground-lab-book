@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h1 { border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        h2 { border-bottom: 1px solid #ecf0f1; padding-bottom: 5px; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code { background-color: #f8f9fa; padding: 2px 4px; border-radius: 3px; font-family: 'Courier New', monospace; }
+        pre { background-color: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; }
+        blockquote { border-left: 4px solid #3498db; margin: 0; padding-left: 20px; color: #7f8c8d; }
+        .nav { background-color: #f8f9fa; padding: 15px; border-radius: 5px; margin-bottom: 30px; }
+        .nav a { margin-right: 15px; }
+        .skill-level { display: inline-block; background-color: #e74c3c; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.8em; margin-left: 10px; }
+        .skill-level.level-1 { background-color: #27ae60; }
+        .skill-level.level-2 { background-color: #f39c12; }
+        .skill-level.level-3 { background-color: #e74c3c; }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="{{ site.baseurl }}/">Home</a>
+        <a href="{{ site.baseurl }}/Index.html">Lab Book Index</a>
+        <a href="https://github.com/virtualsteve-star/chat-playground-lab-book">GitHub</a>
+        <a href="https://github.com/virtualsteve-star/chat-playground">Chat Playground</a>
+    </div>
+    
+    {{ content }}
+    
+    <hr style="margin-top: 50px;">
+    <p><em>This lab book is open source. <a href="https://github.com/virtualsteve-star/chat-playground-lab-book">Contribute on GitHub</a></em></p>
+</body>
+</html> 

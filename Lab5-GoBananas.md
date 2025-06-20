@@ -1,3 +1,8 @@
+---
+layout: default
+title: Lab 5 - Go Bananas
+---
+
 # Lab 5: Go Bananas - Advanced Customization
 
 Everything here is extra credit! These exercises require moderate developer skills and are designed to be challenging and fun. You can do it! Review the [extensibility documentation](https://github.com/virtualsteve-star/chat-playground/blob/main/documentation/extensibility.md) to get started.

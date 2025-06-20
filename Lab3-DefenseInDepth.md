@@ -1,3 +1,8 @@
+---
+layout: default
+title: Lab 3 - Defense in Depth
+---
+
 # Lab 3: Locking the Front Door and Back Door - Defense in Depth
 
 In this lab, you'll master prompt injection attacks and learn comprehensive defense techniques. You'll discover how to prevent code generation exploits and implement multi-layered security measures.

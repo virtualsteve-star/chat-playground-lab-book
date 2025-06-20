@@ -1,3 +1,8 @@
+---
+layout: default
+title: Lab 4 - Simple vs Smart
+---
+
 # Lab 4: Simple vs. Smart - AI-Powered Security
 
 In this lab, you'll compare local rule-based filters with AI-powered moderation systems. You'll learn about automated testing and evaluation of security measures, discovering when simple solutions work and when you need more sophisticated approaches.

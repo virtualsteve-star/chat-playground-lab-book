@@ -1,3 +1,8 @@
+---
+layout: default
+title: Lab 2 - Broken Bot
+---
+
 # Lab 2: Broken Bot - When Good Bots Go Bad
 
 In this lab, you'll explore what happens when chatbots lack proper guardrails and learn how to implement basic content filtering. Meet Oscar, a deliberately problematic bot that demonstrates the importance of security measures.
