@@ -11,6 +11,11 @@ permalink: pretty
 show_drafts: false
 future: false
 
+# Jekyll configuration
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
 # Exclude from processing
 exclude:
   - Gemfile
