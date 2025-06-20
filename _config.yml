@@ -1,7 +1,6 @@
 title: Chat Playground Lab Book
 description: A comprehensive, hands-on learning resource for LLM/Gen AI security concepts
 author: Steve
-email: your-email@example.com
 baseurl: "/chat-playground-lab-book"
 url: "https://virtualsteve-star.github.io"
 
@@ -9,24 +8,6 @@ url: "https://virtualsteve-star.github.io"
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
-
-# Collections
-collections:
-  labs:
-    output: true
-    permalink: /:collection/:name/
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: "labs"
-    values:
-      layout: "default"
-
-# Plugins
-plugins:
-  - jekyll-relative-links
 
 # Exclude from processing
 exclude:
