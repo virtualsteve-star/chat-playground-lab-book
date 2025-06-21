@@ -9,26 +9,26 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f8f9fa;
+    background-color: #f0f2f5; /* Light grey background to match playground feel */
 }
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #4A90E2; /* Blue from playground */
     color: white;
-    text-align: center;
-    padding: 3rem 2rem;
-    margin-bottom: 2rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 0;
+    text-align: left;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    font-weight: 300;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
 }
 
 .subtitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
     opacity: 0.9;
     font-weight: 300;
 }
@@ -36,7 +36,7 @@ header h1 {
 /* Navigation */
 nav {
     background: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #ddd;
     margin-bottom: 2rem;
 }
 
@@ -56,21 +56,22 @@ nav a {
     display: block;
     padding: 1rem 1.5rem;
     text-decoration: none;
-    color: #333;
+    color: #4A90E2; /* Use new blue */
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #667eea;
-    color: white;
+    background-color: #f0f2f5;
 }
 
 /* Main content */
 main {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
+    margin: 0 auto 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
 }
 
 section {
@@ -81,7 +82,7 @@ h2 {
     color: #2c3e50;
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    border-bottom: 3px solid #667eea;
+    border-bottom: 3px solid #4A90E2; /* Use new blue */
     padding-bottom: 0.5rem;
 }
 
@@ -113,15 +114,15 @@ li {
 }
 
 .skill-level {
-    background: white;
+    background: #f8f9fa;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-left: 4px solid #667eea;
+    border: 1px solid #e0e0e0;
+    border-left: 4px solid #4A90E2; /* Use new blue */
 }
 
 .skill-level h3 {
-    color: #667eea;
+    color: #4A90E2; /* Use new blue */
     margin-bottom: 0.5rem;
 }
 
@@ -136,14 +137,12 @@ li {
     background: white;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #e9ecef;
+    border: 1px solid #e0e0e0;
+    transition: border-color 0.3s ease;
 }
 
 .lab-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border-color: #4A90E2;
 }
 
 .lab-card h3 {
@@ -151,13 +150,13 @@ li {
 }
 
 .lab-card h3 a {
-    color: #667eea;
+    color: #4A90E2; /* Use new blue */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .lab-card h3 a:hover {
-    color: #5a6fd8;
+    color: #357ABD; /* Darker blue */
 }
 
 .lab-card p {
@@ -172,7 +171,7 @@ li {
     font-size: 0.9rem;
 }
 
-.skill-level {
+.skill-level-text {
     color: #e74c3c;
     font-weight: 600;
 }
@@ -184,12 +183,12 @@ li {
 
 /* Exercise styles */
 .exercise {
-    background: white;
+    background: #f8f9fa;
     padding: 2rem;
     margin-bottom: 2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-left: 4px solid #3498db;
+    border: 1px solid #e0e0e0;
+    border-left: 4px solid #357ABD; /* Use darker blue */
 }
 
 .exercise h4 {
@@ -206,7 +205,7 @@ li {
 }
 
 .exercise-meta span {
-    background: #ecf0f1;
+    background: #e9ecef;
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.85rem;
@@ -214,11 +213,11 @@ li {
 }
 
 .directions {
-    background: #f8f9fa;
+    background: white;
     padding: 1rem;
     border-radius: 6px;
     margin-bottom: 1rem;
-    border-left: 3px solid #3498db;
+    border-left: 3px solid #4A90E2; /* Use new blue */
 }
 
 .extra-credit {
@@ -236,13 +235,13 @@ li {
 
 /* Links */
 a {
-    color: #667eea;
+    color: #4A90E2; /* Use new blue */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #5a6fd8;
+    color: #357ABD; /* Darker blue */
     text-decoration: underline;
 }
 
@@ -252,39 +251,43 @@ footer {
     color: white;
     text-align: center;
     padding: 2rem;
-    margin-top: 4rem;
+    margin: 2rem auto 0 auto;
+    max-width: 1200px;
+    border-radius: 8px;
 }
 
 footer a {
-    color: #3498db;
+    color: #4A90E2; /* Use new blue */
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
-    
+
     nav ul {
         flex-direction: column;
     }
-    
+
     nav a {
         text-align: center;
+        padding: 0.8rem 1rem;
     }
-    
+
     .lab-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .skill-levels {
         grid-template-columns: 1fr;
     }
-    
+
     main {
-        padding: 0 1rem;
+        padding: 1rem;
+        margin: 0 1rem 2rem 1rem;
     }
-    
+
     .exercise-meta {
         flex-direction: column;
         gap: 0.5rem;
@@ -296,7 +299,7 @@ footer a {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    background: #667eea;
+    background: #4A90E2;
     color: white;
     padding: 0.8rem 1rem;
     border-radius: 50%;
@@ -307,7 +310,7 @@ footer a {
 }
 
 .back-to-top:hover {
-    background: #5a6fd8;
+    background: #357ABD;
     transform: translateY(-2px);
 }
 
