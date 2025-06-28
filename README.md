@@ -2,6 +2,10 @@
 
 A comprehensive, hands-on learning resource for LLM/Gen AI security concepts. This lab book provides structured guidance through **17 hands-on exercises** covering various security challenges and defensive techniques using the [Chat Playground](https://github.com/virtualsteve-star/chat-playground) project.
 
+## 🚀 Quick Start
+
+**Ready to dive in?** Visit the [Live Lab Book](https://virtualsteve-star.github.io/chat-playground-lab-book/) to start learning!
+
 ## About This Project
 
 The Chat Playground Lab Book is designed to complement the [Chat Playground](https://github.com/virtualsteve-star/chat-playground) - an interactive web application that demonstrates LLM security vulnerabilities and defense mechanisms. While you can explore the playground freely, this lab book provides a structured learning path for those who prefer guided exercises.
@@ -21,11 +25,11 @@ This lab book covers essential LLM security concepts through **17 comprehensive 
 
 The lab book is organized into 5 progressive labs with **17 total exercises**, each with multiple skill levels:
 
-1. **[First Steps](index.html#labs)** - Get acquainted with the playground environment (3 exercises)
-2. **[Broken Bot](lab2.html)** - Explore what happens without proper guardrails (4 exercises)
-3. **[Defense in Depth](lab3.html)** - Master prompt injection defense (4 exercises)
-4. **[AI-Powered Security](lab4.html)** - Compare local vs. AI moderation (3 exercises)
-5. **[Advanced Customization](lab5.html)** - Create your own security filters (3 exercises)
+1. **First Steps** - Get acquainted with the playground environment (3 exercises)
+2. **Broken Bot** - Explore what happens without proper guardrails (4 exercises)
+3. **Defense in Depth** - Master prompt injection defense (4 exercises)
+4. **AI-Powered Security** - Compare local vs. AI moderation (3 exercises)
+5. **Advanced Customization** - Create your own security filters (3 exercises)
 
 ## Skill Levels
 
@@ -36,8 +40,8 @@ Exercises are designed for different skill levels:
 
 ## Getting Started
 
-1. **Try the Playground**: Visit the [live Chat Playground demo](https://virtualsteve-star.github.io/chat-playground/)
-2. **Read the Lab Book**: Start with the [Index](index.html) to get an overview
+1. **Visit the Lab Book**: Go to the [Live Lab Book](https://virtualsteve-star.github.io/chat-playground-lab-book/) to start your learning journey
+2. **Try the Playground**: Visit the [Chat Playground](https://virtualsteve-star.github.io/chat-playground/) to experiment with the interactive demos
 3. **Choose Your Path**: Pick exercises that match your skill level and interests
 
 ## Prerequisites
@@ -89,4 +93,4 @@ This lab book was created to support hands-on learning of LLM security concepts.
 
 ---
 
-**Ready to start learning?** Begin with the [Index](index.html) to get an overview of all available labs and exercises!
+**Ready to start learning?** Visit the [Live Lab Book](https://virtualsteve-star.github.io/chat-playground-lab-book/) to begin your LLM security journey!
