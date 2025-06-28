@@ -21,11 +21,11 @@ This lab book covers essential LLM security concepts through **17 comprehensive 
 
 The lab book is organized into 5 progressive labs with **17 total exercises**, each with multiple skill levels:
 
-1. **[First Steps](Index.md#lab-1-first-steps---meet-your-digital-companions)** - Get acquainted with the playground environment (3 exercises)
-2. **[Broken Bot](Index.md#lab-2-broken-bot---when-good-bots-go-bad)** - Explore what happens without proper guardrails (4 exercises)
-3. **[Defense in Depth](Index.md#lab-3-locking-the-front-door-and-back-door---defense-in-depth)** - Master prompt injection defense (4 exercises)
-4. **[AI-Powered Security](Index.md#lab-4-simple-vs-smart---ai-powered-security)** - Compare local vs. AI moderation (3 exercises)
-5. **[Advanced Customization](Index.md#lab-5-go-bananas---advanced-customization)** - Create your own security filters (3 exercises)
+1. **[First Steps](index.html#labs)** - Get acquainted with the playground environment (3 exercises)
+2. **[Broken Bot](lab2.html)** - Explore what happens without proper guardrails (4 exercises)
+3. **[Defense in Depth](lab3.html)** - Master prompt injection defense (4 exercises)
+4. **[AI-Powered Security](lab4.html)** - Compare local vs. AI moderation (3 exercises)
+5. **[Advanced Customization](lab5.html)** - Create your own security filters (3 exercises)
 
 ## Skill Levels
 
@@ -37,7 +37,7 @@ Exercises are designed for different skill levels:
 ## Getting Started
 
 1. **Try the Playground**: Visit the [live Chat Playground demo](https://virtualsteve-star.github.io/chat-playground/)
-2. **Read the Lab Book**: Start with the [Index](Index.md) to get an overview
+2. **Read the Lab Book**: Start with the [Index](index.html) to get an overview
 3. **Choose Your Path**: Pick exercises that match your skill level and interests
 
 ## Prerequisites
@@ -89,4 +89,4 @@ This lab book was created to support hands-on learning of LLM security concepts.
 
 ---
 
-**Ready to start learning?** Begin with the [Index](Index.md) to get an overview of all available labs and exercises!
+**Ready to start learning?** Begin with the [Index](index.html) to get an overview of all available labs and exercises!
