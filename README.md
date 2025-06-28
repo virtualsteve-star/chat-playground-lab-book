@@ -1,6 +1,6 @@
 # Chat Playground Lab Book
 
-A comprehensive, hands-on learning resource for LLM/Gen AI security concepts. This lab book provides structured guidance through various security challenges and defensive techniques using the [Chat Playground](https://github.com/virtualsteve-star/chat-playground) project.
+A comprehensive, hands-on learning resource for LLM/Gen AI security concepts. This lab book provides structured guidance through **17 hands-on exercises** covering various security challenges and defensive techniques using the [Chat Playground](https://github.com/virtualsteve-star/chat-playground) project.
 
 ## About This Project
 
@@ -8,7 +8,7 @@ The Chat Playground Lab Book is designed to complement the [Chat Playground](htt
 
 ## What You'll Learn
 
-This lab book covers essential LLM security concepts through hands-on exercises:
+This lab book covers essential LLM security concepts through **17 comprehensive exercises**:
 
 - **Basic chatbot security** - Understanding how simple rule-based systems work
 - **Content filtering** - Implementing guardrails to prevent inappropriate outputs
@@ -19,13 +19,13 @@ This lab book covers essential LLM security concepts through hands-on exercises:
 
 ## Lab Structure
 
-The lab book is organized into 5 progressive labs, each with multiple exercises:
+The lab book is organized into 5 progressive labs with **17 total exercises**, each with multiple skill levels:
 
-1. **[First Steps](Index.md#lab-1-first-steps---meet-your-digital-companions)** - Get acquainted with the playground environment
-2. **[Broken Bot](Index.md#lab-2-broken-bot---when-good-bots-go-bad)** - Explore what happens without proper guardrails
-3. **[Defense in Depth](Index.md#lab-3-locking-the-front-door-and-back-door---defense-in-depth)** - Master prompt injection defense
-4. **[AI-Powered Security](Index.md#lab-4-simple-vs-smart---ai-powered-security)** - Compare local vs. AI moderation
-5. **[Advanced Customization](Index.md#lab-5-go-bananas---advanced-customization)** - Create your own security filters
+1. **[First Steps](Index.md#lab-1-first-steps---meet-your-digital-companions)** - Get acquainted with the playground environment (3 exercises)
+2. **[Broken Bot](Index.md#lab-2-broken-bot---when-good-bots-go-bad)** - Explore what happens without proper guardrails (4 exercises)
+3. **[Defense in Depth](Index.md#lab-3-locking-the-front-door-and-back-door---defense-in-depth)** - Master prompt injection defense (4 exercises)
+4. **[AI-Powered Security](Index.md#lab-4-simple-vs-smart---ai-powered-security)** - Compare local vs. AI moderation (3 exercises)
+5. **[Advanced Customization](Index.md#lab-5-go-bananas---advanced-customization)** - Create your own security filters (3 exercises)
 
 ## Skill Levels
 
